@@ -23,6 +23,8 @@ public class ListaTicket<T>{
                     costoman = can * 3;
                     System.out.println("\nQuedan " + mercanciarest + " manzana(s) en stock");
                     System.out.println("\nTotal manzanas: $" + costoman);
+                }else{
+                    System.out.println("Cantidad mayor");
                 }
 
             } else if (art.equals("Leche") || art.equals("leche")) {
@@ -31,6 +33,8 @@ public class ListaTicket<T>{
                     System.out.println("\nQuedan " + mercanciares + " leche(s) en stock");
                     costolec = can * 23;
                     System.out.println("\nTotal leche: $" + costolec);
+                }else{
+                    System.out.println("Cantidad mayor");
                 }
             } else if (art.equals("Pasta") || art.equals("pasta")) {
                 if (can <= c3.getCantidad()) {
@@ -38,6 +42,8 @@ public class ListaTicket<T>{
                     System.out.println("\nQuedan " + mercanciares + " pasta(s) en stock");
                     costopasta = can * 13;
                     System.out.println("\nTotal pasta: $" + costopasta);
+                }else{
+                    System.out.println("Cantidad mayor");
                 }
             } else {
                 System.out.println("Cantidad por encima de existencia");
