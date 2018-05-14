@@ -53,19 +53,19 @@ public class Lista<T> {
 
         //Articulo art = new Articulo();
         //String codigoABuscar = art.getClave();
-        if (claves.equals("Manzana")) {
-            Articulo c1 = new Articulo("Manzana","Fruto rojo o amarillo o verde con semillas","$25 k","3 días");
+        if (claves.equals("Manzana") || claves.equals("manzana")) {
+            Articulo c1 = new Articulo("Manzana","Fruto rojo o amarillo o verde con semillas","$25 k","3 días",10);
             System.out.println(c1.toString());
         }
-        else if (claves.equals("Leche")) {
-            Articulo c1 = new Articulo("Leche","Bebida que viene de las vacas","$20 la pieza","2 semanas");
+        else if (claves.equals("Leche") || claves.equals("leche")) {
+            Articulo c1 = new Articulo("Leche","Bebida que viene de las vacas","$20 la pieza","2 semanas",25);
             System.out.println(c1.toString());
         }
-        else if (claves.equals("Pasta")) {
-            Articulo c1 = new Articulo("Pasta","Para lasagna","$10","25/09/19");
+        else if (claves.equals("Pasta") || claves.equals("pasta")) {
+            Articulo c1 = new Articulo("Pasta","Para lasagna","$10","25/09/19",36);
             System.out.println(c1.toString());
         }else {
-            System.out.println("El código no coincide con ningun Artículo");
+            System.out.println("\nEl código no coincide con ningun Artículo");
         }
     }
 }
